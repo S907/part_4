@@ -5,7 +5,7 @@ export const useFetch=(options)=>{
 
     useEffect(()=>{
         console.log('usefetch USEffect');
-        fetch(options.url).
+        fetch(options.url, { mode: 'no-cors'}).
         then(res=>res.json()).
         then(res=>setDta(res))
     },[])
