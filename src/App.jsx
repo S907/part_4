@@ -6,7 +6,7 @@ import { useFetch } from './components/useFetch';
 function App() {
   const [count, setCount] = useState(0);
   const {dta} =useFetch({
-    url:"/jack.json"
+    url:"./jack.json"
   })  
 
   console.log('App rendering !!');
